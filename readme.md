@@ -1,1 +1,95 @@
-🗄️ Course: Cơ sở dữ liệu (Database)Học phần cốt lõi thuộc chương trình đào tạo chuyên ngành Hệ thống thông tin kinh doanh tại Đại học Kinh tế TP.HCM (UEH).👤 Thông tin sinh viênHọ và tên: Quách Thành Long (Stephen)MSSV: 88241020109Chuyên ngành: Hệ thống thông tin kinh doanhLớp: Tối thứ 6 (Giảng viên: Thầy Phan Hiền)🎯 Mục tiêu học phầnThiết kế hệ thống: Hiểu và thực hiện các sơ đồ lưu trữ thông tin (ERD, Relational Model).Quản trị & Khai thác: Sử dụng thành thạo ngôn ngữ SQL để quản trị và truy vấn dữ liệu.Tối ưu hóa: Nắm vững các quy tắc chuẩn hóa (Normalization) và ràng buộc toàn vẹn.📊 Cấu trúc điểm đánh giá (Assessment)Thành phầnTrọng sốHình thứcQuá trình (Giữa kỳ)50%Đồ án (25-50%), Bài tập (0-25%), Điểm danh (0-10%)Kết thúc học phần50%Thi thực hành trên máy (SQL, Trigger, Lý thuyết)📅 Lộ trình học tập (Syllabus)BuổiNội dung chínhTrọng tâm (CLOs)1Tổng quan CSDL & Mô hình thực thể kết hợp (ER)Phân tích thực thể, mối quan hệ2 & 3Mô hình dữ liệu quan hệ & Thiết kế dữ liệuKhóa, Phụ thuộc hàm, Chuẩn hóa (1NF, 2NF, 3NF)4Case Study: Lập mô hình thực thể & logicThảo luận nhóm, vẽ sơ đồ thực tế5 & 6Hệ quản trị CSDL & Ngôn ngữ SQLDDL (Tạo bảng), DML (Truy vấn, Join, Nest, Aggregation)7Lập trình trong CSDLCursor, Function, Procedure, Trigger8Quản lý giao tác & Bảo mậtTransaction (ACID), Phân quyền, Backup9Thuyết trình Đồ ánXây dựng mô hình CSDL thực tế📚 Tài liệu học tậpChính:Fundamentals of Relational Database Management Systems (S. Sumathi).Beginning SQL Server 2012 for developers (Robin Dewson).Công cụ thực hành gợi ý:Vẽ sơ đồ: Draw.io, Lucichart, hoặc MySQL Workbench.Hệ quản trị: SQL Server (theo đề cương), hoặc PostgreSQL/MySQL (tùy giảng viên).🛠️ Nhiệm vụ cần hoàn thành[ ] Đọc trước tài liệu trước mỗi buổi học.[ ] Hoàn thành các bài tập trên LMS theo deadline.[ ] Triển khai Đồ án nhóm (Chọn đề tài có tính ứng dụng cao).[ ] Luyện tập viết SQL và Trigger để chuẩn bị thi cuối kỳ trên máy.Ghi chú: Đây là môn học nền tảng cực kỳ quan trọng cho lộ trình trở thành Full-stack Developer và AI Engineer của bạn. Đặc biệt lưu ý phần Trigger và Chuẩn hóa dữ liệu.
+🗄️ Database Course — Foundations of Data Systems
+
+🎓 Core course in Business Information Systems at University of Economics Ho Chi Minh City (UEH)
+🚀 Building the backbone for Full-stack Development & AI Engineering
+
+👤 Student Profile
+Name: Quách Thành Long (Stephen)
+Student ID: 88241020109
+Major: Business Information Systems
+Class: Friday Evening
+Instructor: Thầy Phan Hiền
+🎯 Course Objectives
+
+This course equips foundational knowledge to design, manage, and optimize modern data systems:
+
+🧩 System Design
+Build ERD (Entity-Relationship Diagram)
+Transform into Relational Models
+Analyze entities, attributes, and relationships
+⚙️ Data Management & Querying
+Master SQL (Structured Query Language)
+Perform:
+SELECT, JOIN, GROUP BY
+Nested queries & aggregations
+Work with real-world datasets
+🚀 Optimization & Integrity
+Apply Normalization (1NF → 3NF)
+Understand:
+Functional Dependencies
+Constraints & Data Integrity
+Prevent redundancy & anomalies
+📊 Assessment Structure
+Component	Weight	Description
+📝 Midterm (Process)	50%	Project (25–50%), Assignments (0–25%), Attendance (0–10%)
+💻 Final Exam	50%	Practical test: SQL, Trigger, Theory
+📅 Learning Roadmap (Syllabus)
+Session	Topics	Focus
+1	Introduction & ER Model	Entity, Relationship Analysis
+2–3	Relational Model	Keys, Functional Dependencies, Normalization
+4	Case Study	Real-world Modeling
+5–6	DBMS & SQL	DDL, DML, JOIN, Aggregation
+7	Advanced Programming	Cursor, Function, Procedure, Trigger
+8	Transactions & Security	ACID, Authorization, Backup
+9	Final Project Presentation	Real-world Database System
+📚 Learning Resources
+📘 Core Books
+Fundamentals of Relational Database Management Systems — S. Sumathi
+Beginning SQL Server 2012 for Developers — Robin Dewson
+🛠️ Tools & Platforms
+Diagram Design: Draw.io, Lucidchart, MySQL Workbench
+Database Systems:
+SQL Server (recommended)
+PostgreSQL / MySQL (optional)
+🛠️ Tasks & Responsibilities
+ 📖 Pre-read materials before each session
+ 🧠 Complete LMS assignments on time
+ 👥 Develop Group Database Project (real-world application)
+ 💻 Practice SQL & Trigger for final exam
+⚠️ Important Notes
+
+💡 This is a foundational course for becoming:
+
+Full-stack Developer
+Data Engineer
+AI Engineer
+🔥 Focus Areas:
+Trigger (🔥 highly tested)
+Normalization (core mindset)
+SQL Optimization
+🚀 Future Application
+
+This course is not just academic — it's the foundation for:
+
+🧠 Data-driven systems
+📊 Analytics platforms
+🤖 AI pipelines
+💰 Financial & business intelligence systems
+🧠 Mindset
+
+“If frontend is what users see, then database is what makes systems intelligent.”
+
+📌 Repository Structure (Recommended)
+database-course/
+│
+├── docs/               # Theory notes, slides
+├── erd/                # ER diagrams
+├── sql/                # SQL queries & exercises
+├── project/            # Final group project
+├── triggers/           # Trigger practice
+└── README.md
+🔗 Author Vision
+
+This repository is part of a bigger journey:
+
+Building toward becoming a CTO-level engineer — mastering systems from data → backend → AI → product.
