@@ -1,6 +1,15 @@
-![preview](image/readme/1776944956881.png)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" height="80" alt="SQL Server"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png" height="80" alt="IntelliJ IDEA"/>
+</p>
 
-#  Database Course Notes — by Long
+<h1 align="center"> Database Course Notes — by Long</h1>
+
+<p align="center">
+  Notes • Practice • ERD • SQL • Real-world mindset
+</p>
+
 
 Mình dùng **IntelliJ** để code và quản lý project cho tiện (quen tay 😄).  
 Các bạn đang học theo trường có thể dùng **SQL Server Management Studio (SSMS)** như trong môn học là hoàn toàn ok, không ảnh hưởng gì.
