@@ -76,7 +76,6 @@ Mình biết gì trả lời đó, không thì chờ cao nhân 😄
 Repo này là kiểu:
 > học tới đâu → viết lại tới đó  
 
-Không phải tài liệu hoàn hảo,  
-nhưng mục tiêu là **dễ hiểu và dùng được**.
+Không phải tài liệu hoàn hảo nhưng mục tiêu là **dễ hiểu và dùng được**.
 
 Chúc bạn học tốt 💪💪💪💪
