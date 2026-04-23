@@ -43,3 +43,40 @@ Hiện tại mình đang học và tham khảo từ 2 hướng:
 ## 📂 Cách đọc repo này
 
 Trong repo, mình chia theo từng buổi học:
+buoi_1.md
+buoi_2.md
+...
+
+
+Mỗi buổi gồm:
+- Tóm tắt nội dung  
+- Giải thích lại cho dễ hiểu  
+- Ví dụ + note đi thi  
+
+📌 Có vài đoạn mình dùng AI để viết lại cho gọn (vì mình viết hơi rối 😅), nhưng nội dung đều dựa trên quá trình học thật.
+
+---
+
+## 🎥 Sắp tới
+
+- Thêm video giải thích  
+- Đi sâu mấy phần dễ “toang”: ERD, Normalization, SQL, Trigger  
+
+---
+
+## 🤝 Trao đổi
+
+Cứ thoải mái hỏi / góp ý.  
+Mình biết gì trả lời đó, không thì chờ cao nhân 😄  
+
+---
+
+## 🚀 Lời cuối
+
+Repo này là kiểu:
+> học tới đâu → viết lại tới đó  
+
+Không phải tài liệu hoàn hảo,  
+nhưng mục tiêu là **dễ hiểu và dùng được**.
+
+Chúc bạn học tốt 💪💪💪💪
