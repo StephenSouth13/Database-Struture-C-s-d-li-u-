@@ -11,7 +11,7 @@
 </p>
 
 
-Mình dùng **IntelliJ** để code và quản lý project cho tiện (quen tay 😄).  
+Mình dùng **IntelliJ** để code và quản lý project cho tiện (quen tay ).  
 Các bạn đang học theo trường có thể dùng **SQL Server Management Studio (SSMS)** như trong môn học là hoàn toàn ok, không ảnh hưởng gì.
 
 ---
@@ -22,7 +22,7 @@ README này mình viết để các bạn **hiểu cách mình tổ chức tài 
 
 - Tài liệu được tổng hợp lại từ **LMS + bài giảng trên lớp + tự học thêm**
 - Có chỉnh sửa lại cho dễ hiểu hơn (vì slide nhiều khi hơi “khô”)
-- Một vài đoạn mình có dùng AI để viết lại cho gọn (do mình viết dài dòng quá 😅), nhưng nội dung chính vẫn là mình học và hệ thống lại
+- Một vài đoạn mình có dùng AI để viết lại cho gọn (do mình viết dài dòng quá ), nhưng nội dung chính vẫn là mình học và hệ thống lại
 
 ---
 
