@@ -1,0 +1,85 @@
+ENGLISH:
+🚩 ASSIGNMENT: MULTI-BRANCH ORGANIZATION MANAGEMENT SYSTEM (GRADEUP CORE)
+1. Required Entities
+
+You are required to design database tables to manage the following:
+
+Organizations:
+Each client is treated as a separate tenant (organization) in a multi-tenant system.
+Departments:
+One organization can have multiple departments (1–N relationship).
+Employees:
+Each department can have multiple employees (1–N relationship).
+Each employee has a detailed profile (1–1 relationship).
+Projects:
+Projects that are executed within an organization.
+Skills:
+A catalog of skills (e.g., React, SQL, AI, Running, etc.).
+Assignments (ProjectAssignments):
+Represents the participation of employees in projects.
+An employee can join multiple projects, and a project can have multiple employees (N–N relationship).
+EmployeeSkills:
+Represents the skills of employees.
+One employee can have multiple skills, and one skill can belong to multiple employees (N–N relationship).
+2. Required Relationships
+
+Your design must clearly represent the following relationships:
+
+🔹 One-to-One (1–1)
+Employees ↔ EmployeeProfiles
+Split into separate tables to improve performance and scalability.
+🔹 One-to-Many (1–N)
+Organizations → Departments → Employees
+One organization has many departments.
+One department has many employees.
+🔹 Many-to-Many (N–N)**
+Employees ↔ Projects
+Implemented via a junction table: ProjectAssignments
+Employees ↔ Skills
+Implemented via a junction table: EmployeeSkills
+🔹 Self-Referencing Relationship
+Employees (Manager_ID)
+Each employee may have a manager.
+Manager_ID references another record in the Employees table.
+Used to model hierarchical structures (manager–subordinate relationships).
+🎯 Goal
+
+Design a scalable and normalized relational database that:
+
+Supports multi-tenant architecture
+Ensures data integrity and consistency
+Handles complex relationships efficiently
+Is ready for real-world systems such as HRM, ERP, or enterprise platforms
+
+
+TIẾNG VIỆT
+🚩 ĐỀ BÀI: HỆ THỐNG QUẢN TRỊ TỔ CHỨC ĐA CHI NHÁNH (GRADEUP CORE)
+1. Yêu cầu các thực thể (Entities)
+Bạn cần thiết kế các bảng để quản lý:
+
+Organizations (Tổ chức): Mỗi khách hàng là một Tenant (Tổ chức) riêng biệt.
+
+Departments (Phòng ban): Một tổ chức có nhiều phòng ban (1-n).
+
+Employees (Nhân sự): Một phòng ban có nhiều nhân viên (1-n). Mỗi nhân viên có một hồ sơ chi tiết (1-1).
+
+Projects (Dự án): Các dự án chạy trong tổ chức.
+
+Skills (Kỹ năng): Danh mục kỹ năng (React, SQL, AI, Running...).
+
+Assignments (Phân công): Nhân viên tham gia vào nhiều dự án, một dự án có nhiều nhân viên (n-n).
+
+Employee_Skills: Một nhân viên có nhiều kỹ năng, một kỹ năng có thể thuộc về nhiều nhân viên (n-n).
+
+2. Các mối quan hệ bắt buộc phải thể hiện
+1 - 1: Employees ↔ EmployeeProfiles (Chia bảng để tối ưu hóa hiệu năng).
+
+1 - n: Organizations → Departments → Employees.
+
+n - n (Quan hệ nhiều - nhiều):
+
+Employees ↔ Projects (Thông qua bảng trung gian ProjectAssignments).
+
+Employees ↔ Skills (Thông qua bảng trung gian EmployeeSkills).
+
+Self-referencing (Quan hệ tự thân): Employees (Manager_Id) trỏ về chính bảng Employees để quản lý cấp trên - cấp dưới.
