@@ -3,7 +3,7 @@
 THIẾT KẾ CƠ SỞ DỮ LIỆU HỆ THỐNG QUẢN TRỊ TỔ CHỨC (HRM SaaS)
 DATABASE DESIGN FOR ORGANIZATION MANAGEMENT SYSTEM (HRM SaaS)
 1. Bối cảnh dự án | Project Context
-🇻🇳 Tiếng Việt
+   🇻🇳 Tiếng Việt
 
 Hệ thống GradeUp là một nền tảng quản trị giáo dục đa chi nhánh (Multi-tenant).
 
@@ -111,21 +111,21 @@ SkillID (FK)
 ProficiencyLevel (CHECK: từ 1 đến 5)
 3. Yêu cầu về ràng buộc (Constraints)
 3. Constraints Requirements
-🇻🇳
-Tất cả khóa chính (PK) phải dùng IDENTITY (tự tăng)
-Các khóa ngoại (FK) phải thiết lập đúng
-Đảm bảo toàn vẹn dữ liệu
-Thiết lập DEFAULT GETDATE() cho các cột ngày tạo
-Sử dụng NVARCHAR cho dữ liệu tiếng Việt
-🇺🇸
-All primary keys must use IDENTITY (auto-increment)
-Foreign keys must be properly defined
-Ensure data integrity
-Use DEFAULT GETDATE() for created date columns
-Use NVARCHAR for Unicode (Vietnamese text)
+   🇻🇳
+   Tất cả khóa chính (PK) phải dùng IDENTITY (tự tăng)
+   Các khóa ngoại (FK) phải thiết lập đúng
+   Đảm bảo toàn vẹn dữ liệu
+   Thiết lập DEFAULT GETDATE() cho các cột ngày tạo
+   Sử dụng NVARCHAR cho dữ liệu tiếng Việt
+   🇺🇸
+   All primary keys must use IDENTITY (auto-increment)
+   Foreign keys must be properly defined
+   Ensure data integrity
+   Use DEFAULT GETDATE() for created date columns
+   Use NVARCHAR for Unicode (Vietnamese text)
 4. Nhiệm vụ thực hiện (Tasks)
 4. Implementation Tasks
-4.1. DDL – Data Definition Language
+   4.1. DDL – Data Definition Language
 
 🇻🇳
 
@@ -183,9 +183,9 @@ Verify relationships:
 1-N
 N-N
 5. Kết quả cần nộp | Submission
-🇻🇳
-File SQL (DDL + DML)
-Ảnh sơ đồ ERD
-🇺🇸
-SQL file (DDL + DML)
-ERD diagram image
+   🇻🇳
+   File SQL (DDL + DML)
+   Ảnh sơ đồ ERD
+   🇺🇸
+   SQL file (DDL + DML)
+   ERD diagram image
