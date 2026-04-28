@@ -6,14 +6,16 @@
 -- 1. Khởi tạo Database
 USE master;
 GO
-IF EXISTS (SELECT * FROM sys.databases WHERE name = 'GradeUp_DB')
-    DROP DATABASE GradeUp_DB;
-GO
-CREATE DATABASE GradeUp_DB;
-GO
-USE GradeUp_DB;
+
+-- Một phát ăn ngay, không cần truy vấn sys.databases
+DROP DATABASE IF EXISTS GradeUp_DB;
 GO
 
+CREATE DATABASE GradeUp_DB;
+GO
+
+USE GradeUp_DB;
+GO
 -- =============================================
 -- LEVEL 1: CÁC THỰC THỂ ĐỘC LẬP
 -- =============================================
