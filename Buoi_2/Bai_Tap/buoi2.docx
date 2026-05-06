@@ -1,0 +1,83 @@
+🚩 ASSIGNMENT 2: DATABASE DESIGN & ANALYTICS
+ĐỀ TÀI: HỆ THỐNG QUẢN LÝ VẬN HÀNH SÂN BAY & LOGISTICS (Aviation & Cargo Operations)
+
+1. Bối cảnh dự án (Project Context)
+Bạn là Database Architect cho một Cảng hàng không quốc tế. Hệ thống yêu cầu giám sát chặt chẽ luồng không lưu (tránh va chạm), quản lý tình trạng đường băng, và điều phối chuỗi cung ứng hàng hóa (Cargo Export/Import) cho các hãng hàng không. Bài toán cốt lõi là tính toán thời gian giãn cách an toàn (Intervals) và truy xuất khối lượng hàng hóa xuất khẩu.
+
+2. Yêu cầu Schema (Entities & Attributes)
+Thiết kế tối thiểu 5 bảng cốt lõi với cấu trúc sau:
+
+2.1. Bảng Airlines (Hãng hàng không)
+AirlineCode (PK, VARCHAR(10)): Mã hãng (VD: VNA, VJ, BAM).
+
+AirlineName (NVARCHAR(100)): Tên hãng.
+
+Country (NVARCHAR(50)): Quốc gia.
+
+2.2. Bảng Runways (Đường băng)
+RunwayID (PK, VARCHAR(10)): Mã đường băng (VD: 25R, 25L).
+
+MaxWeightCapacity (INT): Tải trọng tối đa cho phép (Tấn).
+
+Status (VARCHAR(20)): 'Available', 'Maintenance', 'Occupied'.
+
+2.3. Bảng Flights (Chuyến bay - Bảng trung tâm)
+FlightID (PK, VARCHAR(20)): Mã chuyến bay (VD: VN234).
+
+AirlineCode (FK): Thuộc hãng nào.
+
+RunwayID (FK): Đáp/Cất cánh tại đường băng nào.
+
+FlightType (VARCHAR(20)): 'Passenger' (Chở khách) hoặc 'Cargo' (Chở hàng).
+
+ScheduledTime (DATETIME): Thời gian cất/hạ cánh theo lịch trình.
+
+ActualTime (DATETIME): Thời gian cất/hạ cánh thực tế (Dùng để tính độ trễ).
+
+Direction (VARCHAR(15)): 'Departure' (Cất cánh) hoặc 'Arrival' (Hạ cánh).
+
+2.4. Bảng CargoShipments (Lô hàng xuất nhập khẩu)
+CargoID (PK, INT IDENTITY): Mã lô hàng.
+
+FlightID (FK): Chở trên chuyến bay nào.
+
+WeightKG (DECIMAL(10,2)): Khối lượng (Kg).
+
+CargoCategory (NVARCHAR(50)): Loại hàng ('Perishable' - Dễ hỏng, 'Electronics', 'General').
+
+CustomsStatus (VARCHAR(30)): Trạng thái hải quan ('Cleared' - Đã thông quan, 'Pending', 'Rejected').
+
+3. Nhiệm vụ Truy vấn (Data Query Tasks) - Độ khó Tăng dần
+LEVEL 1: TRUY XUẤT CƠ BẢN (Filtering & Joins)
+Q1. Danh sách thông quan: Liệt kê các lô hàng điện tử ('Electronics') có khối lượng trên 500kg đã được thông quan ('Cleared'). Yêu cầu hiển thị: Mã lô hàng, Tên hãng hàng không, Mã chuyến bay và Khối lượng.
+Q2. Báo cáo tình trạng đường băng: Liệt kê các đường băng đang bảo trì ('Maintenance') và sức chứa tối đa của chúng.
+
+LEVEL 2: THỐNG KÊ LOGISTICS (Group By & Aggregation)
+Q3. Thống kê xuất hàng: Tính Tổng khối lượng hàng hóa (TotalWeight) và Số lượng lô hàng được xuất đi (Direction = 'Departure') trong tháng hiện tại, nhóm theo từng Hãng hàng không.
+Q4. Quá tải tải trọng: Tìm các chuyến bay chở hàng ('Cargo') có tổng khối lượng hàng hóa trên chuyến bay đó lớn hơn tải trọng cho phép (MaxWeightCapacity) của đường băng mà nó chuẩn bị cất cánh.
+
+LEVEL 3: PHÂN TÍCH VẬN HÀNH (Time Analytics & Subqueries)
+Q5. Tính thời gian cất/hạ cánh (Delay Analytics):
+Tính toán độ trễ (Delay Minutes) của từng chuyến bay: ActualTime - ScheduledTime. Chỉ hiển thị những chuyến bay bị trễ quá 30 phút.
+Q6. Phân tích "Thời gian giãn cách" (Interval/Clearance Time):
+(Bài toán an toàn bay): Tìm các chuyến bay hạ cánh (Arrival) trên cùng một đường băng có khoảng cách thời gian hạ cánh thực tế (ActualTime) cách nhau dưới 10 phút. (Gợi ý: Dùng SELF JOIN hoặc Window Function LAG()).
+
+LEVEL 4: BÁO CÁO TỔNG HỢP (BI Dashboard)
+Q7. Top Hãng Hàng Không Cứng: Viết truy vấn xuất ra một báo cáo tổng hợp gồm:
+
+Tên Hãng hàng không.
+
+Tổng số chuyến bay đã thực hiện.
+
+Tỉ lệ đúng giờ (% các chuyến bay có Delay <= 5 phút).
+
+Tổng khối lượng hàng hóa đã vận chuyển thành công.
+
+4. Output cần nộp trên GitHub
+Thư mục Buoi_2_Aviation_DB/
+
+File 01_schema_and_seed.sql: Chứa code tạo 4 bảng trên và insert khoảng 10 chuyến bay, 20 lô hàng mẫu.
+
+File 02_analytics_queries.sql: Chứa lời giải cho 7 câu truy vấn (Q1 -> Q7).
+
+Cập nhật README.md với sơ đồ ERD của sân bay.
