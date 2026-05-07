@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/Buoi_1/Bai_Tap - Execies/01_init_schema.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/Buoi_1/Bai_Tap - Excercies/01_init_schema.sql" dialect="AZURE" />
+    <file url="file://$PROJECT_DIR$/Buoi_1/Bai_Tap - Excercies/02_seed_data.sql" dialect="AZURE" />
   </component>
 </project>
