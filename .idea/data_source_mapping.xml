@@ -3,5 +3,6 @@
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/Buoi_1/Bai_Tap - Excercies/01_init_schema.sql" value="01d6cdc3-7a3e-49c5-8edf-7b1976eb5fa5" />
     <file url="file://$PROJECT_DIR$/Buoi_1/Bai_Tap - Excercies/02_seed_data.sql" value="01d6cdc3-7a3e-49c5-8edf-7b1976eb5fa5" />
+    <file url="file://$PROJECT_DIR$/Buoi_2/Bai_Tap/01_schema_and_seed.sql" value="01d6cdc3-7a3e-49c5-8edf-7b1976eb5fa5" />
   </component>
 </project>

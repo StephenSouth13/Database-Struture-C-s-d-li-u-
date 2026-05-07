@@ -3,5 +3,6 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Buoi_1/Bai_Tap - Excercies/01_init_schema.sql" dialect="AZURE" />
     <file url="file://$PROJECT_DIR$/Buoi_1/Bai_Tap - Excercies/02_seed_data.sql" dialect="AZURE" />
+    <file url="file://$PROJECT_DIR$/Buoi_2/Bai_Tap/01_schema_and_seed.sql" dialect="AZURE" />
   </component>
 </project>
